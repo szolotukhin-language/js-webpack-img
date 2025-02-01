@@ -12,14 +12,6 @@ module.exports = {
     rules:[
       {
         test: /\.(png|jpg)$/,
-/*        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192
-            }
-          }
-        ]*/
         type: 'asset/resource',
         generator: {
           filename: './img/[name][ext]'
